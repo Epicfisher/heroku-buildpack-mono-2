@@ -59,16 +59,16 @@ cp -r "${MONO_CACHE_LOCATION}/mono" .
 ln -s "$BUILD_DIR/mono" /app
 
 # find a solution file
-SLN=$(find . -maxdepth 1 -iname "*.sln")
-if [ $( echo "${SLN}" | wc -l ) -gt 1 ]; then
-  echo "-----> Too many *.sln files"
-  exit 1
-fi
+#SLN=$(find . -maxdepth 1 -iname "*.sln")
+#if [ $( echo "${SLN}" | wc -l ) -gt 1 ]; then
+  #echo "-----> Too many *.sln files"
+  #exit 1
+#fi
 
-if [ "${SLN}" == "" ]; then
-  echo "-----> No *.sln file found"
-  exit 1
-fi
+#if [ "${SLN}" == "" ]; then
+  #echo "-----> No *.sln file found"
+  #exit 1
+#fi
 
 echo "-----> Compiling Mono application"
 
@@ -94,8 +94,8 @@ then
     cert-sync --user /etc/ssl/certs/ca-certificates.crt
 fi
 
-mono ${NUGET_EXECUTABLE_PATH} restore -NonInteractive
-xbuild /property:Configuration=Release /property:OutDir=${BUILD_CACHE_LOCATION} ${SLN}
+#mono ${NUGET_EXECUTABLE_PATH} restore -NonInteractive
+#xbuild /property:Configuration=Release /property:OutDir=${BUILD_CACHE_LOCATION} ${SLN}
 
 cp -r ${BUILD_CACHE_LOCATION}* ${BUILD_DIR}
 
