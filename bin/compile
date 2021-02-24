@@ -97,7 +97,7 @@ fi
 #mono ${NUGET_EXECUTABLE_PATH} restore -NonInteractive
 #xbuild /property:Configuration=Release /property:OutDir=${BUILD_CACHE_LOCATION} ${SLN}
 
-cp -r ${BUILD_CACHE_LOCATION}* ${BUILD_DIR}
+#cp -r ${BUILD_CACHE_LOCATION}* ${BUILD_DIR}
 
 mkdir -p ${BUILD_DIR}/.profile.d
 cp -n ${LP_DIR}/.profile.d/* ${BUILD_DIR}/.profile.d/
