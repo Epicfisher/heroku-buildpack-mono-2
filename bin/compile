@@ -132,4 +132,6 @@ if [ -d "$BUILD_DIR/_PublishedWebsites/" ]; then
   fi
 fi
 
+chmod -R 777 /app
+
 echo "-----> Build SUCCESS"
