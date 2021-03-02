@@ -12,7 +12,6 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-
 function conditional_download() {
   DOWNLOAD_URL="$1"
   DESTINATION="$2"
@@ -39,7 +38,6 @@ export_env_dir() {
 }
 
 export_env_dir $ENV_DIR
-
 
 MONO_VERSION=${MONO_VERSION:-6.12.0.122}
 echo "-----> Using mono $MONO_VERSION"
