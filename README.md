@@ -1,8 +1,6 @@
-# Mono Heroku Buildpack
+# heroku-buildpack-mono-6.12.0.122
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) for Mono that will run [ASP.NET](http://friism.com/running-net-on-heroku) and [Katana/OWIN applications](http://friism.com/running-owin-katana-apps-on-heroku).
-
-It uses [nginx](http://www.mono-project.com/FastCGI_Nginx) as the web server and runs on Mono 3.10.0.
+This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) for running Mono 6.12.0.122.
 
 ## Usage
 
