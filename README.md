@@ -1,6 +1,6 @@
 # heroku-buildpack-mono-6.12.0.122
 
-A [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) that runs Mono 6.12.0.122 programs.
+A [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) that runs Mono 6.12.0.122 C# programs.
 
 ## Installation
 
